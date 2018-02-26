@@ -11,6 +11,7 @@
   "dependencies": {
     "comlinkjs": "^2.3.3",
     "greenlet": "^0.1.2",
+    "operative": "^0.4.6",
     "systemjs": "^0.21.0"
   }
 }
