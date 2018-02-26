@@ -3,6 +3,12 @@
 
 A Comparison of plain web workers and various popular Web Worker libraries
 
+## Examples Provided
+
+* Plain Web Worker
+* Greenlet
+* Comlink
+
 ## Usage
 
 ```bash
