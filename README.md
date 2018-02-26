@@ -8,6 +8,7 @@ A Comparison of plain web workers and various popular Web Worker libraries
 * Plain Web Worker
 * Greenlet
 * Comlink
+* Operative
 
 ## Usage
 
