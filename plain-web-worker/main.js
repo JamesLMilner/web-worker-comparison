@@ -8,10 +8,14 @@ if (window.Worker) {
         console.log("Primes sent back to the main thread")
         document.getElementById("showPrimes").innerHTML = `${event.data.length} prime numbers calculated!`;
         calculate.removeAttribute("disabled");
+        calculate.innerText = "Done!"
+        calculate.style.cursor = "initial";
     }, false);
 
     calculate.addEventListener("click", () => {
         calculate.setAttribute("disabled", true);
+        calculate.innerText = "Calculating Primes..."
+        calculate.style.cursor = "wait";
         document.getElementById("showPrimes").innerHTML = "Main thread not blocked, try highlighting this text :)";
         worker.postMessage(n);
     });
