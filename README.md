@@ -10,6 +10,10 @@ A Comparison of plain web workers and various popular Web Worker libraries
 * Comlink
 * Operative
 
+## Demo
+
+[Here](https://jamesmilneruk.github.io/web-worker-comparison/)
+
 ## Usage
 
 ```bash
