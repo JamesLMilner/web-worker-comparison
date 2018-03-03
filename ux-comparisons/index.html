@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css"  href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <style>
+            .hidden {
+                vertical-align: bottom;
+                visibility: hidden;
+            }
+            .visible {
+                vertical-align: bottom;
+                visibility: visible;
+            }
+            .example {
+                margin-bottom: 65px;
+            }
+            span {
+                font-size: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1> Web Worker Jank Test </h1>
+            <br><br>
+            <section class="example">
+                <h2>No Web Worker</h3> 
+                <input id="userInput"></input>
+                <br><br>
+                <div>
+                    <img width="28px" id="spinner" class="hidden" src="./loading.gif">
+                    <span id="userMessage"> 
+                        Output goes here
+                    </span>
+                </div>
+            </section>
+
+            <section class="example">
+                <h2>No Web Worker: requestIdleCallback</h3> 
+                <input id="userInputRID"></input>
+                <br><br>
+                <div>
+                    <img width="28px" id="spinnerRID" class="hidden" src="./loading.gif">
+                    <span id="userMessageRID"> 
+                        Output goes here
+                    </span>
+                </div>
+            </section>
+
+            <section class="example">
+                <h2>Web Worker: Render All Inputs</h3> 
+                <input id="userInputRenderAll"></input>
+                <br><br>
+                <div>
+                    <img width="28px" id="spinnerRenderAll" class="hidden" src="./loading.gif">
+                    <span id="userMessageRenderAll"> 
+                        Output goes here
+                    </span>
+                </div>
+            </section>
+            
+            <section  class="example">
+                <h2>Web Worker: Render Latest Input</h3> 
+                <input id="userInputRenderLatest"></input>
+                <br><br>
+                <img width="28px" id="spinnerRenderLatest" class="hidden" src="./loading.gif">
+                <span id="userMessageRenderLatest"> 
+                    Output goes here
+                </span>
+            </section>
+           
+            
+        </main>
+
+        <script src="./../node_modules/greenlet/dist/greenlet.umd.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
