@@ -1,4 +1,4 @@
 node_modules/
-!node_modules/comlinkjs/comlink.global.js
+!node_modules/comlinkjs/umd/comlink.js
 !node_modules/operative/dist/operative.js
 !node_modules/greenlet/dist/greenlet.umd.js
