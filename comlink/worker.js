@@ -1,4 +1,4 @@
-self.importScripts("./../node_modules/comlinkjs/comlink.global.js");
+self.importScripts("./../node_modules/comlinkjs/umd/comlink.js");
 class SieveOfEratosthenes {
   
     calculate(limit) {
